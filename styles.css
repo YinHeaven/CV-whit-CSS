@@ -114,7 +114,7 @@ ul {
 }
 
 a {
-    color: #3498db;
+    color: #0A66C2;
     text-decoration: none;
 }
 
@@ -142,7 +142,7 @@ a:hover {
 
 /* LinkedIn - Azul celeste */
 .linkedin-link {
-    color: #0A66C2; /* Azul de LinkedIn */
+    color: #004182; /* Azul de LinkedIn */
 }
 
 .linkedin-link:hover {
@@ -152,30 +152,40 @@ a:hover {
 
 /* GitHub - Naranja/Negro */
 .github-link {
-    color: #f05033; /* Naranja de GitHub */
+    color: #004182; /* Naranja de GitHub */
 }
 
 .github-link:hover {
-    color: #c9513c; /* Naranja más oscuro */
+    color: #004182; /* Naranja más oscuro */
     text-decoration: underline;
 }
 
 /* CodePen - Negro */
 .codepen-link {
-    color: #000000; /* Negro de CodePen */
+    color: #004182; /* Negro de CodePen */
 }
 
 .codepen-link:hover {
-    color: #333333; /* Gris oscuro */
+    color: #004182; /* Gris oscuro */
     text-decoration: underline;
 }
+
+.contact-info .icon svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+    fill: #004182; 
+}
+.whatsapp-link svg { fill: #25D366; }
+.github-link svg { fill: #181717; } 
 
 /* Iconos con el mismo color que los enlaces */
 .whatsapp-link .icon, 
 .linkedin-link .icon,
 .github-link .icon,
 .codepen-link .icon {
-    color: inherit; /* Hereda el color del enlace padre */
+    color: inherit;
 }
 
 /* Responsive design */
