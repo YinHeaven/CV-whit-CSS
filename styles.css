@@ -1,0 +1,191 @@
+/* styles.css */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.left-column {
+    flex: 1;
+    padding: 30px;
+    background: #2c3e50;
+    color: white;
+}
+
+.right-column {
+    flex: 2;
+    padding: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid white;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+}
+
+.profession {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    color: #ecf0f1;
+}
+
+h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.contact-info p, .languages p {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.skills li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+.job, .project, .education {
+    margin-bottom: 25px;
+}
+
+.job-title, .degree, .project h3 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.company, .university {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+}
+
+.date {
+    color: #3498db;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* links */
+/* Estilos base para todos los enlaces */
+.left-column a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+/* WhatsApp - Verde característico */
+.whatsapp-link {
+    color: #25D366; /* Verde de WhatsApp */
+}
+
+.whatsapp-link:hover {
+    color: #128C7E; /* Verde más oscuro */
+    text-decoration: underline;
+}
+
+/* LinkedIn - Azul celeste */
+.linkedin-link {
+    color: #0A66C2; /* Azul de LinkedIn */
+}
+
+.linkedin-link:hover {
+    color: #004182; /* Azul más oscuro */
+    text-decoration: underline;
+}
+
+/* GitHub - Naranja/Negro */
+.github-link {
+    color: #f05033; /* Naranja de GitHub */
+}
+
+.github-link:hover {
+    color: #c9513c; /* Naranja más oscuro */
+    text-decoration: underline;
+}
+
+/* CodePen - Negro */
+.codepen-link {
+    color: #000000; /* Negro de CodePen */
+}
+
+.codepen-link:hover {
+    color: #333333; /* Gris oscuro */
+    text-decoration: underline;
+}
+
+/* Iconos con el mismo color que los enlaces */
+.whatsapp-link .icon, 
+.linkedin-link .icon,
+.github-link .icon,
+.codepen-link .icon {
+    color: inherit; /* Hereda el color del enlace padre */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .left-column, .right-column {
+        flex: none;
+        width: 100%;
+    }
+}
